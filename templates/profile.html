@@ -1,0 +1,36 @@
+{% extends "user_base.html" %}
+
+{% block content %}
+<div class="w-full md:p-48 p-8 flex flex-col justify-center">
+  <h1 class="text-4xl mb-8 font-bold text-white">Profile for {{ user.username }}</h1>
+  <form action="/profile" method="post" class="w-full">
+    <div class="w-full">
+      <div class="w-full">
+        <label
+          for="minecraft"
+          class="block text-sm font-medium leading-6 text-white"
+          >Minecraft Username</label
+        >
+        <div class="mt-2">
+          <input
+            id="minecraft"
+            title="Minecraft Username"
+            name="minecraft"
+            type="text"
+            value="{{ minecraft }}"
+            class="block w-full rounded-md border-0 bg-white/5 py-1.5 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 w-full lg:w-28">
+      <button
+        type="submit"
+        class="w-full rounded-md bg-indigo-500 px-10 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+      >
+        Save
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock %}

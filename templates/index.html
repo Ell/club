@@ -1,0 +1,118 @@
+{% extends "user_base.html" %} {% block content %}
+<div class="grid lg:grid-cols-2 grid-flow-row auto-cols-auto lg:gap-4 lg:p-24">
+  <div class="overflow-hidden bg-gray-950 shadow p-8 border border-slate-800">
+    <div>
+      <div class="px-4 sm:px-0">
+        <h3 class="text-base font-semibold leading-7 text-slate-300">
+          [n0pals] Enshrouded
+        </h3>
+        <p class="mt-1 max-w-2xl text-sm leading-6 text-slate-400">
+          <a href="https://store.steampowered.com/app/1203620/Enshrouded/"
+            >Steam Link</a
+          >
+        </p>
+      </div>
+      <div class="mt-6 border-t border-gray-800">
+        <dl class="divide-y divide-gray-800">
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium leading-6 text-slate-400">
+              Server Address
+            </dt>
+            <dd
+              class="mt-1 text-sm leading-6 text-slate-200 sm:col-span-2 sm:mt-0"
+            >
+              {{ game_servers.enshrouded.address }}
+            </dd>
+          </div>
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium leading-6 text-slate-400">
+              Server Password
+            </dt>
+            <dd
+              class="mt-1 text-sm leading-6 text-slate-200 sm:col-span-2 sm:mt-0"
+            >
+              {{ game_servers.enshrouded.password }}
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="overflow-hidden bg-gray-950 shadow p-8 border border-slate-800">
+    <div>
+      <div class="px-4 sm:px-0">
+        <h3 class="text-base font-semibold leading-7 text-slate-300">
+          [n0pals] Palworld
+        </h3>
+        <p class="mt-1 max-w-2xl text-sm leading-6 text-slate-400">
+          <a href="https://store.steampowered.com/app/1623730/Palworld/"
+            >Steam Link</a
+          >
+        </p>
+      </div>
+      <div class="mt-6 border-t border-gray-800">
+        <dl class="divide-y divide-gray-800">
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium leading-6 text-slate-400">
+              Server Address
+            </dt>
+            <dd
+              class="mt-1 text-sm leading-6 text-slate-200 sm:col-span-2 sm:mt-0"
+            >
+              {{ game_servers.palworld.address }}
+            </dd>
+          </div>
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium leading-6 text-slate-400">
+              Server Password
+            </dt>
+            <dd
+              class="mt-1 text-sm leading-6 text-slate-200 sm:col-span-2 sm:mt-0"
+            >
+              {{ game_servers.palworld.password }}
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="overflow-hidden bg-gray-950 shadow p-8 border border-slate-800">
+    <div>
+      <div class="px-4 sm:px-0">
+        <h3 class="text-base font-semibold leading-7 text-slate-300">
+          [n0pals] Minecraft
+        </h3>
+        <p class="mt-1 max-w-2xl text-sm leading-6 text-slate-400">
+          <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-9/files/5069516">Download Modpack</a>
+        </p>
+      </div>
+      <div class="mt-6 border-t border-gray-800">
+        <dl class="divide-y divide-gray-800">
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium leading-6 text-slate-400">
+              Server Address
+            </dt>
+            <dd
+              class="mt-1 text-sm leading-6 text-slate-200 sm:col-span-2 sm:mt-0"
+            >
+              {{ game_servers.minecraft.address }}
+            </dd>
+          </div>
+          <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium leading-6 text-slate-400">
+              Server Password
+            </dt>
+            <dd
+              class="mt-1 text-sm leading-6 text-slate-200 sm:col-span-2 sm:mt-0"
+            >
+              Ping @ellg on discord to get whitelisted
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
